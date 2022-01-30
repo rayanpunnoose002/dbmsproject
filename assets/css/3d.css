@@ -1,0 +1,18 @@
+#module {
+
+    background:#fcfcfc  repeat-x left bottom;
+
+    
+
+    border-bottom:2px solid #bbb;
+
+    border-top:2px solid #ddd;
+
+    border-radius:10px;
+    
+
+    -webkit-border-radius:10px;
+
+    -moz-border-radius:10px;
+
+}
