@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
 					VALUES ('$email', '$password')";
 			$result = mysqli_query($conn, $sql);
 			if ($result) {
-				echo "<script>alert('Registeration compeleted.')</script>";
+        $_SESSION["sucess"] = "Registeration Sucessfull!!!.";
 			} else {
 				$_SESSION["error"] = "Woops! Something Wrong Went.";
            
@@ -72,7 +72,7 @@ if (isset($_POST['submit'])) {
     <header id="header1" class="fixed-top">
         <div class="container d-flex align-items-center">
     
-          <h1 class="logo mr-auto"><a href="#">OXYMETRON NEW USER REGISTERATION</a></h1>
+          <h1 class="logo mr-auto"><a style="color:red" >OXYMETRON NEW USER REGISTERATION</a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
     
@@ -112,9 +112,13 @@ if (isset($_POST['submit'])) {
                         $error = $_SESSION["error"];
                         echo "<p> <font color=red><span>$error</span></font> </p>";
                     }
+                    if(isset($_SESSION["sucess"])){
+                      $sucess = $_SESSION["sucess"];
+                      echo "<p> <font color=green><span>$sucess</span></font> </p>";
+                  }
                 ?> 
-            <button  name="submit" style="margin-left: 50%; margin-top: -31px;" type="submit" class="btn btn-primary">REGISTER</button> 
-            <a href="./signupp.php">LOG IN</a>
+            <button  name="submit" style="margin-left: 50%; margin-top: -31px;" type="submit" class="btn btn-danger">REGISTER</button> 
+            <a href="./signupp.php" style="color:red">LOG IN</a>
           </form>
 
       </div>
@@ -125,4 +129,5 @@ if (isset($_POST['submit'])) {
 </html>
 <?php
     unset($_SESSION["error"]);
+    unset($_SESSION["sucess"]);
 ?>

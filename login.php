@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
 
 	$sql = "SELECT * FROM user WHERE email='$email' AND password='$password'";
 	$result = mysqli_query($conn, $sql);
-	if($email == 'admin1234@gamil.com')
+	if($email == 'admin1234@gamil.com'&& $result->num_rows > 0)
 		{  
 			$row = mysqli_fetch_assoc($result);
 			$_SESSION['email'] = $row['email'];

@@ -44,7 +44,7 @@ if (isset($_SESSION['name'])) {
     <header id="header1" class="fixed-top" >
         <div class="container d-flex align-items-center">
     
-          <h1 class="logo mr-auto"><a href="index.php"><h3>OXYMETRON ADMIN PAGE</h3></a></h1>
+          <h1 class="logo mr-auto"><a >OXYMETRON ADMIN PAGE</a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
     
@@ -90,7 +90,7 @@ if (isset($_SESSION['name'])) {
     
       <section id="hero" class="d-flex align-items-center">
     <div class="container">
-      <h1>Welcome to OXYMETRON</h1>
+      <h1>Welcome to OXYMETRON ADMIN PAGE</h1>
       <h2>Your All In One Health Care Website</h2>
       <a href="#services " class="btn-get-started scrollto"><?php echo "<h4>Welcome " . $_SESSION['email'] . "</h4>"; ?></a>
     </div>

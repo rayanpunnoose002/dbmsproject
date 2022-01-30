@@ -66,7 +66,7 @@ if (isset($_POST['submit'])) {
     <header id="header1" class="fixed-top">
         <div class="container d-flex align-items-center">
     
-          <h1 class="logo mr-auto"><a href="index.html">OXYMETRON REPORT INSERTION</a></h1>
+          <h1 class="logo mr-auto"><a style=color:red>OXYMETRON REPORT INSERTION</a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
     
@@ -74,6 +74,7 @@ if (isset($_POST['submit'])) {
             <ul>
               <li class="active"><a href="admin7268.php">Home</a></li>
               <li><a href="#contact">Contact</a></li>
+              
     
             </ul>
           </nav><!-- .nav-menu -->
@@ -120,7 +121,7 @@ if (isset($_POST['submit'])) {
               <div class="validate"></div>
             </div>
             <div class="mb-4">
-            <div class="text-center"><button class="btn btn-primary" name='submit' type="submit">Submit</button></div>
+            <div class="text-center"><button class="btn btn-danger" name='submit' type="submit">Submit</button></div>
             </div>
             
           </form>

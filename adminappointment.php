@@ -41,7 +41,7 @@ error_reporting(0);
 <header id="header1" class="fixed-top" >
         <div class="container d-flex align-items-center">
     
-          <h1 class="logo mr-auto"><a href="index.php"><h3>OXYMETRON  ADMIN APPOINTMENT HISTORY</h3></a></h1>
+          <h1 class="logo mr-auto"><a style=color:red ><h3>OXYMETRON  ADMIN APPOINTMENT HISTORY</h3></a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
     
@@ -50,7 +50,7 @@ error_reporting(0);
           <li class="active"><a href="./admin7268.php">Home<i class="icofont-home"></i></a></li>
           
           <li><a href="./adminappointment.php">BOOKING HISTORY<i class="icofont-ambulance"></i></a></li>
-          <li><a href="#contact">Contact<i class="icofont-ui-call"></i></a></li>
+          <li class="active"><a onclick="window.print();" >Download<i class="icofont-download"></i></a></li>
           <li><a href="#contact"><?php echo "<h4>Welcome " . $_SESSION['email'] . "</h4>"; ?> <i class="icofont-business-man-alt-1"></i></a></li>
           <li class="loading"><a href="./signupp.html">Sign Out<i class="icofont-sign-out"></i></a></li>
           

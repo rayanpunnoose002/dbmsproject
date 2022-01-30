@@ -48,7 +48,7 @@ error_reporting(0);
           <nav class="nav-menu d-none d-lg-block">
             <ul>
               <li class="active"><a href="index.php">Home</a></li>
-              <li class="active"><a href="./history.pdf" download="history.pdf">Download<i class="icofont-download"></i></a></li>
+              <li class="active"><a onclick="window.print();" >Download<i class="icofont-download"></i></a></li>
               
               
     

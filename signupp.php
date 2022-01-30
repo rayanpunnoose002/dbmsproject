@@ -39,7 +39,7 @@ session_start();
     <header id="header1" class="fixed-top">
         <div class="container d-flex align-items-center">
     
-          <h1 class="logo mr-auto"><a href="#">OXYMETRON LOG IN</a></h1>
+          <h1 class="logo mr-auto"><a style="color:red" >OXYMETRON LOG IN</a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
     
@@ -76,8 +76,8 @@ session_start();
                         echo "<p> <font color=red><span>$error</span></font> </p>";
                     }
                 ?> 
-            <button href="./index.html" name="submit" style="margin-left: 50%; margin-top: -31px;" type="submit" class="btn btn-primary">LOG IN</button> 
-            <a href="./register1.php">SIGNUP</a>
+            <button href="./index.html" name="submit" style="margin-left: 50%; margin-top: -31px;" type="submit" class="btn btn-danger">LOG IN</button> 
+            <a href="./register1.php" style="color:red">SIGNUP</a>
              
             
           </form>
