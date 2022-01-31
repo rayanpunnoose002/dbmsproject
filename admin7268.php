@@ -54,7 +54,7 @@ if (isset($_SESSION['name'])) {
           
           <li><a href="./adminappointment.php">BOOKING HISTORY<i class="icofont-ambulance"></i></a></li>
           <li><a href="./adminhealth.php">ReportInsertion<i class="icofont-hospital"></i></a></li>
-          <li><a href="#doctors">Doctors<i class="icofont-doctor"></i></a></li>
+          <li><a href="./adminapprove.php">Appointment approval<i class="icofont-doctor"></i></a></li>
            <li class="drop-down"><a href=""><i class="icofont-bell-alt"></i> </a>
             <ul>
               <li><a href="./appointtt.php">My Booking<i class="icofont-book-alt"></i></a></li>

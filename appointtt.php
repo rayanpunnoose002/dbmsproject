@@ -70,6 +70,7 @@ error_reporting(0);
 <th>hospital</th>
 <th>department</th>
 <th>doctor</th>
+<th>status</th>
 </tr>
         
     <?php
@@ -86,7 +87,8 @@ while($row = $result->fetch_assoc()) {
 	"</td><td>".  $row["hospital"]. "</td>".
 	"</td><td>".  $row["department"]. "</td>".
 	"</td><td>".  $row["doctor"]. "</td>".
-	"</td><td>".  $row["message"]. "</td></tr>";
+	"</td><td>".  $row["message"]. "</td>".
+  "</td><td>".  $row["STATUS_1"]. "</td></tr>";;
 	}
 	echo "</table>";
 	} 

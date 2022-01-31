@@ -23,13 +23,15 @@ if (isset($_POST['submit'])) {
     $department= $_POST['department'];
     $doctor= $_POST['doctor'];
     $message=$_POST['message'];
+    $STATUS_1='pending';
+        
         
         
         if(!$message == NULL)
         {
             
-            $sql = "INSERT INTO appoint (name, email,phone,date,time,district,hospital,department,doctor,message)
-                VALUES ('$name', '$email','$phone','$date','$time','$district','$hospital','$department','$doctor','$message')";
+            $sql = "INSERT INTO appoint (name, email,phone,date,time,district,hospital,department,doctor,message,STATUS_1)
+                VALUES ('$name', '$email','$phone','$date','$time','$district','$hospital','$department','$doctor','$message','$STATUS_1')";
             $result = mysqli_query($conn,$sql);
         }else{
             echo "<script>alert('enter all data')</script>";

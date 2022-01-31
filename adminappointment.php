@@ -52,7 +52,7 @@ error_reporting(0);
           <li><a href="./adminappointment.php">BOOKING HISTORY<i class="icofont-ambulance"></i></a></li>
           <li class="active"><a onclick="window.print();" >Download<i class="icofont-download"></i></a></li>
           <li><a href="#contact"><?php echo "<h4>Welcome " . $_SESSION['email'] . "</h4>"; ?> <i class="icofont-business-man-alt-1"></i></a></li>
-          <li class="loading"><a href="./signupp.html">Sign Out<i class="icofont-sign-out"></i></a></li>
+          <li class="loading"><a href="./signupp.php">Sign Out<i class="icofont-sign-out"></i></a></li>
           
 
         </ul>
@@ -75,6 +75,7 @@ error_reporting(0);
 <th>department</th>
 <th>doctor</th>
 <th>message</th>
+<th>status</th>
 </tr>
 <?php
 $sql = "SELECT DISTINCT * FROM appoint";
@@ -90,7 +91,8 @@ $row["phone"]. "</td>".
 "</td><td>".  $row["hospital"]. "</td>".
 "</td><td>".  $row["department"]. "</td>".
 "</td><td>".  $row["doctor"]. "</td>".
-"</td><td>".  $row["message"]. "</td></tr>";
+"</td><td>".  $row["message"]. "</td>".
+"</td><td>".  $row["STATUS_1"]. "</td></tr>";
 }
 echo "</table>";
 } 
