@@ -1,9 +1,9 @@
-<?php 
+<?php
 
 session_start();
 
 if (!isset($_SESSION['email'])) {
-    header("Location: login.php");
+  header("Location: login.php");
 }
 
 ?>
@@ -18,22 +18,24 @@ if (!isset($_SESSION['email'])) {
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Medilab Bootstrap Template - Index</title>
-  
+
 
   <!-- Favicons -->
 
 
   <!-- Google Fonts -->
-  
+
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  
+
   <link href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+ 
 
   <!-- =======================================================
   * Template Name: Medilab - v2.1.1
@@ -45,11 +47,12 @@ if (!isset($_SESSION['email'])) {
 
 <body>
 
+
   <!-- ======= Top Bar ======= -->
   <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
     <div class="container d-flex">
       <div class="contact-info mr-auto">
-        
+
       </div>
       <div class="social-links">
         <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
@@ -68,46 +71,44 @@ if (!isset($_SESSION['email'])) {
       <h1 class="logo mr-auto"><a href="index.html">OXYMETRON</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
+      
+      
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home<i class="icofont-home"></i></a></li>
-          
+          <li class="active"><a href="index.php">Home<i class="icofont-home"></i></a></li>
           <li><a href="#services">Services<i class="icofont-ambulance"></i></a></li>
           <li><a href="#departments">Departments<i class="icofont-hospital"></i></a></li>
           <li><a href="#doctors">Doctors<i class="icofont-doctor"></i></a></li>
-           <li class="drop-down"><a href=""><i class="icofont-bell-alt"></i> </a>
+          <li class="drop-down"><a href=""><i class="icofont-bell-alt"></i> </a>
             <ul>
               <li><a href="./appointtt.php">My Booking<i class="icofont-book-alt"></i></a></li>
+              <li><a href="./appointt.php">Booking Card<i class="icofont-book-alt"></i></a></li>
               <li><a href="./emergency .html">Emergency<i class="icofont-ambulance-cross"></i></a></li>
               <li><a href="./ambulance booking.html">Ambulance Booking<i class="icofont-ambulance"></i></i></a></li>
               <li><a href="./table.php">History<i class="icofont-history"></i></i></a></li>
               <li><a href="./medicinebooking.html">Medicine Booking<i class="icofont-capsule"></i></i></a></li>
               <li class="drop-down"><a href="#">Recent visits<i class="icofont-history"></i></a>
-                  <ul><a href="#"><i class="icofont-history"></i>Booking made on 11/01/2021 at medical college kottayam</a> </li>
-                  <li><a href="#"><i class="icofont-history"></i>Booking made on 10/03/2021 at caritas hospital kottayam</a></li>
-                  <li><a href="#"><i class="icofont-history"></i>Booking made on 01/06/2021 at medical college kottayam</a></li>
-                  <li><a href="#"><i class="icofont-history"></i>Booking made on 16/07/2021 at medical college kottayam</a></li>
-                  <li><a href="#"><i class="icofont-history"></i>Booking made on 21/08/2021 at medical college kottayam</a></li>
-                </ul>
+                <ul><a href="#"><i class="icofont-history"></i>Booking made on 11/01/2021 at medical college kottayam</a>
               </li>
-              <li><a href="#">My account<i class="icofont-bag-alt"></i></a></li>
-              <li><a href="#">payments<i class="icofont-pay"></i></a></li>
-              <li><a href="#">user info<i class="icofont-info"></i></a></li>
+              <li><a href="#"><i class="icofont-history"></i>Booking made on 10/03/2021 at caritas hospital kottayam</a></li>
+              <li><a href="#"><i class="icofont-history"></i>Booking made on 01/06/2021 at medical college kottayam</a></li>
+              <li><a href="#"><i class="icofont-history"></i>Booking made on 16/07/2021 at medical college kottayam</a></li>
+              <li><a href="#"><i class="icofont-history"></i>Booking made on 21/08/2021 at medical college kottayam</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact<i class="icofont-ui-call"></i></a></li>
-          <li><a href="#contact"><?php echo "<h4>Welcome " . $_SESSION['email'] . "</h4>"; ?> <i class="icofont-business-man-alt-1"></i></a></li>
-          <li class="loading"><a href="./signupp.php">Sign Out<i class="icofont-sign-out"></i></a></li>
-          
+          <li><a href="#">My account<i class="icofont-bag-alt"></i></a></li>
+          <li><a href="#">payments<i class="icofont-pay"></i></a></li>
+          <li><a href="#">user info<i class="icofont-info"></i></a></li>
+        </ul>
+        </li>
+        <li><a href="#contact">Contact<i class="icofont-ui-call"></i></a></li>
+        <li><a href="#"><?php echo "<h4>Welcome " . $_SESSION['email'] . "</h4>"; ?> <i class="icofont-business-man-alt-1"></i></a></li>
+        <li class="loading"><a href="./signupp.php">Sign Out<i class="icofont-sign-out"></i></a></li>
+
 
         </ul>
       </nav><!-- .nav-menu -->
-
       <a href="./appointment.php" class="appointment-btn scrollto">Make an Appointment</a>
-      
-      
-
     </div>
   </header><!-- End Header -->
 
@@ -152,7 +153,7 @@ if (!isset($_SESSION['email'])) {
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="icofont-prescription"></i>
                     <h4>Online Appointments</h4>
-                    <p>Book your appointment with our doctors.  Arthroscopy & Sport Surgery Cardiology Cardiothoracic Surgery Clinical Oncology Dermatology Ear, Nose & Throat Surgery  ...</p>
+                    <p>Book your appointment with our doctors. Arthroscopy & Sport Surgery Cardiology Cardiothoracic Surgery Clinical Oncology Dermatology Ear, Nose & Throat Surgery ...</p>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
@@ -161,10 +162,10 @@ if (!isset($_SESSION['email'])) {
                     <h4>Bookings instruction</h4>
                     <p>
                       please make sure that you must make booking atleast 12 hours before the appointments to be made. kindlly download a copy of the reciept of the booking while visting the hospital
-  
+
                     </p>
 
-                  
+
                   </div>
                 </div>
               </div>
@@ -285,7 +286,7 @@ if (!isset($_SESSION['email'])) {
     </section><!-- End Services Section -->
 
     <!-- ======= Appointment Section ======= -->
-   <!-- End Appointment Section -->
+    <!-- End Appointment Section -->
 
     <!-- ======= Departments Section ======= -->
     <section id="departments" class="departments">
@@ -293,7 +294,7 @@ if (!isset($_SESSION['email'])) {
 
         <div class="section-title">
           <h2>Departments</h2>
-          
+
         </div>
 
         <div class="row">
@@ -305,7 +306,7 @@ if (!isset($_SESSION['email'])) {
               <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#tab-2">Neurology</a>
               </li>
-              
+
               <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#tab-3">Pediatrics</a>
               </li>
@@ -321,7 +322,7 @@ if (!isset($_SESSION['email'])) {
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Cardiology</h3>
                     <p class="font-italic">Doctors Leading Cardiology Department Are Dr V L Jayaprakash,Dr K Jayaprakash,Dr Raihanathul Misiriya.K.J,Dr Suresh Madhavan.</p>
-                    <p>The Department of Cardiology has emerged as a premier centre for cardiovascular services in  western U.P., catering to thousands of heart patients. Non invasive Labs of the Department are equipped with state of the art Color Doppler Echo Machines, Treadmills, Holter, 24 hour Ambulatory B.P. monitoring system and HUTT. Cardiac Catheterization lab was established in November 2016 and since then, 5500 interventional procedures with excellent results have been performed. Complex angioplasties, advanced cardiac pacing including dual chamber pacing, ICD’s, CRT are routinely implanted. We are in the process of developing electrophysiology studies and radiofrequency ablation techniques to be done on routine basis. These outstanding achievements in a short period have been possible due to consistent and dedicated efforts of all the faculty members. Our cath data is routinely incorporated in National Interventional Council for strategic national planning.</p>
+                    <p>The Department of Cardiology has emerged as a premier centre for cardiovascular services in western U.P., catering to thousands of heart patients. Non invasive Labs of the Department are equipped with state of the art Color Doppler Echo Machines, Treadmills, Holter, 24 hour Ambulatory B.P. monitoring system and HUTT. Cardiac Catheterization lab was established in November 2016 and since then, 5500 interventional procedures with excellent results have been performed. Complex angioplasties, advanced cardiac pacing including dual chamber pacing, ICD’s, CRT are routinely implanted. We are in the process of developing electrophysiology studies and radiofrequency ablation techniques to be done on routine basis. These outstanding achievements in a short period have been possible due to consistent and dedicated efforts of all the faculty members. Our cath data is routinely incorporated in National Interventional Council for strategic national planning.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
@@ -340,7 +341,7 @@ if (!isset($_SESSION['email'])) {
                   </div>
                 </div>
               </div>
-              
+
               <div class="tab-pane" id="tab-3">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
@@ -552,7 +553,7 @@ if (!isset($_SESSION['email'])) {
         </div>
       </div>
 
-      
+
       <div class="container">
         <div class="row mt-5">
 
@@ -621,10 +622,10 @@ if (!isset($_SESSION['email'])) {
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
-    
+
     <div class="container d-md-flex py-4">
 
-      
+
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>

@@ -2141,3 +2141,15 @@ input[type="submit"],.agileits_copyright p a,a{
 		width: 90.5% !important;
 	}
 }
+.container02{
+  background-image:url("../assets/img/hero-bg.jpg");
+  background-attachment: fixed;
+  background-position: center;    
+  width: 40%;
+  margin: 50px auto;
+  border-radius: 5px;
+  margin-top: 89px;
+  width: 548px;
+  height: 330px;
+}
+

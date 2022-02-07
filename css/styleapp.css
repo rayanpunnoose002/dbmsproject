@@ -39,18 +39,7 @@ h1 {
     font-family: 'FrancoisOne';
 }
 
-.container1 {
-    background:url("../images/R.png");
-    background-attachment: fixed;
-    background-position: center;
-    background: size 80px;;
-    width: 40%;
-    margin: 50px auto;
-    border-radius: 5px;
-    margin-top: 89px;
-    width: 548px;
-    height: 305px;
-}
+
 .paymentbox {
     background: url("../images/43-435314_emergency-clipart-hospital-cross-emergency-department-symbol.png") no-repeat 400px -5px;
     padding: 20px;

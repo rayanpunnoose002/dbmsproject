@@ -8,7 +8,7 @@ error_reporting(0);
 
 
 if (isset($_SESSION['name'])) {
- header("Location: appointtt.php");
+ header("Location: appointment.php");
 }
 
 
@@ -24,14 +24,15 @@ if (isset($_POST['submit'])) {
     $doctor= $_POST['doctor'];
     $message=$_POST['message'];
     $STATUS_1='pending';
+    $token='0';
         
         
         
-        if(!$message == NULL)
+        if($name !=NULL &&($email!=NULL && $phone!=NULL && $date!=NULL && $time!=NULL && $district!=NULL && $hospital!=NULL && $department!=NULL && $doctor!=NULL && $message!=NULL))
         {
             
-            $sql = "INSERT INTO appoint (name, email,phone,date,time,district,hospital,department,doctor,message,STATUS_1)
-                VALUES ('$name', '$email','$phone','$date','$time','$district','$hospital','$department','$doctor','$message','$STATUS_1')";
+            $sql = "INSERT INTO appoint (name, email,phone,date,time,district,hospital,department,doctor,message,STATUS_1,token)
+                VALUES ('$name', '$email','$phone','$date','$time','$district','$hospital','$department','$doctor','$message','$STATUS_1','$token')";
             $result = mysqli_query($conn,$sql);
         }else{
             echo "<script>alert('enter all data')</script>";
